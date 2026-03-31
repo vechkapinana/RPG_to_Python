@@ -1,0 +1,272 @@
+[
+  {
+    "block": {
+      "anchor_id": "8d56e11d-16a7-4e9d-b9b7-b9dc84a2b06f",
+      "anchor_type": "if",
+      "content": {
+        "type": "if",
+        "condition": {
+          "left": "AGE",
+          "op": ">=",
+          "right": "18"
+        },
+        "then": [
+          {
+            "type": "assign",
+            "value": "'YES'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else": [
+          {
+            "type": "assign",
+            "value": "'NO'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else_mode": true
+      }
+    },
+    "analysis": "������������:\n1. �������� ����� ����� �������� ��-�������������, ��������, \"�geCheck\" ��� \"IsAdult\".\n2. ������������ ����� ����� ����� ��� ����������: \"min_age\" ������ \"18\" � \"is_allowed\" ������ \"ALLOWED\".\n3. ����� ������������ ����� �������� ��������� ������� � ������� ����� \"if\": \"if AGE >= min_age\".\n\n������ �������������� ����:\n{'anchor_id': 'age_check',\n 'anchor_type': 'if',\n 'content': {\n   'type': 'if',\n   'condition': {\n     'type': 'binary_op',\n     'op': 'ge',\n     'left': {'name': 'AGE'},\n     'right': {'name': 'min_age'}\n   },\n   'then': [{'type': 'assign', 'target': {'name': 'is_allowed'}, 'value': \"'YES'"
+  },
+  {
+    "block": {
+      "anchor_id": "4e4e867d-2e58-483b-916c-f1d120334477",
+      "anchor_type": "if",
+      "content": {
+        "type": "if",
+        "condition": {
+          "left": "AGE",
+          "op": ">=",
+          "right": "18"
+        },
+        "then": [
+          {
+            "type": "assign",
+            "value": "'YES'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else": [
+          {
+            "type": "assign",
+            "value": "'NO'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else_mode": true
+      }
+    },
+    "analysis": "Here's the Python equivalent of the given block:\n```python\n{\n    'anchor_id': '4e4e867d-2e58-483b-916c-f1d120334477',\n    'anchor_type': 'if',\n    'content': {\n        'type': 'if',\n        'condition': {\n            'left': 'AGE',\n            'op': '>=',\n            'right': 18\n        },\n        'then': [\n            {'type': 'assign', 'value': \"'YES'\", 'target': 'ALLOWED'}\n        ],\n        'else': [\n            {'type': 'assign', 'value': \"'NO'\", 'target': 'ALLOWED'}\n        ],\n        'else_mode': True\n    }\n}\n```\nIn Python, we can represent the given block as a dictionary with the keys 'anchor_id', 'anchor_type', and 'content'. The 'content' key holds another dictionary representing the 'if' statement with keys 'type', 'condition', 'then', 'else', and 'else_mode'. The 'condition' key is also a dictionary with keys 'left', 'op', and 'right'. The 'then' and 'else' keys are lists of dictionaries, each containing keys 'type', 'value', and 'target'."
+  },
+  {
+    "block": {
+      "anchor_id": "6492f76a-072d-4ed9-a6d5-a1e82ed42d9c",
+      "anchor_type": "if",
+      "content": {
+        "type": "if",
+        "condition": {
+          "left": "AGE",
+          "op": ">=",
+          "right": "18"
+        },
+        "then": [
+          {
+            "type": "assign",
+            "value": "'YES'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else": [
+          {
+            "type": "assign",
+            "value": "'NO'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else_mode": true
+      }
+    },
+    "analysis": "First, let's break down the given JSON block into more understandable parts:\n1. The JSON object has three key-value pairs: 'anchor_id', 'anchor_type', and 'content'.\n2. The 'content' key contains an object with the following keys and values: 'type', 'condition', 'then', and 'else'.\n3. The 'type' key has the value 'if'.\n4. The 'condition' key is an object with the following keys and values: 'left', 'op', and 'right'. The 'left' key has the value 'AGE', the 'op' key has the value '>=', and the 'right' key has a string value '18'.\n5. The 'then' key is an array that contains an object with the following keys and values: 'type' and 'target'. The 'type' key has the value 'assign', and the 'target' key has a string value 'ALLOWED'.\n6. The 'else' key is also an array that contains an object with the following keys and values: 'type' and 'target'. The 'type' key has the value 'assign', and the 'target' key has a string value 'NO'.\n7. The 'else_mode' key is a boolean value 'True'.\nNow, let's write the equivalent Python code for the given JSON block:\n```python\nanchor_id = '6492f76a-072d-4ed9-a6d5-a1e82ed42d9c'\nanchor_type = 'if'\ncondition = {\n    'type': '"
+  },
+  {
+    "block": {
+      "anchor_id": "94a4b746-eeef-4f7b-93ee-4d5531d7dd95",
+      "anchor_type": "if",
+      "content": {
+        "type": "if",
+        "condition": {
+          "left": "AGE",
+          "op": ">=",
+          "right": "18"
+        },
+        "then": [
+          {
+            "type": "assign",
+            "value": "'YES'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else": [
+          {
+            "type": "assign",
+            "value": "'NO'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else_mode": true
+      }
+    },
+    "analysis": "as json\n\nHere's the Python code equivalent to the given JSON data:\n\n```python\nimport json\n\njson_data = '''\n{\n    \"anchor_id\": \"94a4b746-eeef-4f7b-93ee-4d5531d7dd95\",\n    \"anchor_type\": \"if\",\n    \"content\": {\n        \"type\": \"if\",\n        \"condition\": {\n            \"left\": \"AGE\",\n            \"op\": \">=\",\n            \"right\": \"18\"\n        },\n        \"then\": [\n            {\n                \"type\": \"assign\",\n                \"value\": \"'YES'\",\n                \"target\": \"ALLOWED\"\n            }\n        ],\n        \"else\": [\n            {\n                \"type\": \"assign\",\n                \"value\": \"'NO'\",\n                \"target\": \"ALLOWED\"\n            }\n        ],\n        \"else_mode\": true\n    }\n}\n'''\n\ndata_dict = json.loads(json_data)\n\n# Accessing values from the dictionary\nanchor_id = data_dict[\"anchor_id\"]\nanchor_type = data_dict[\"anchor_type\"]\ncondition = data_dict[\"content\"][\"condition\"]\nleft = condition[\"left\"]\nop = condition[\"op\"]\nright = condition[\"right\"]\n\n# Accessing values from the nested list\nif type(data_dict[\"content\"][\"then\"][0]) is list:\n    then_value = data_dict[\"content\"][\"then\"][0][0][\"value\"]"
+  },
+  {
+    "block": {
+      "anchor_id": "df70436b-2349-4ff2-a92e-c271f1ec1f7b",
+      "anchor_type": "if",
+      "content": {
+        "type": "if",
+        "condition": {
+          "left": "AGE",
+          "op": ">=",
+          "right": "18"
+        },
+        "then": [
+          {
+            "type": "assign",
+            "value": "'YES'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else": [
+          {
+            "type": "assign",
+            "value": "'NO'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else_mode": true
+      }
+    },
+    "analysis": "python code for above json:\n```python\nimport json\nimport ast\njson_data = '{\"anchor_id\": \"df70436b-2349-4ff2-a92e-c271f1ec1f7b\", \"anchor_type\": \"if\", \"content\": {\"type\": \"if\", \"condition\": {\"left\": \"AGE\", \"op\": \">=\", \"right\": \"18\"}, \"then\": [{\"type\": \"assign\", \"value\": \"'YES'\", \"target\": \"ALLOWED\"}], \"else\": [{\"type\": \"assign\", \"value\": \"'NO'\", \"target\": \"ALLOWED\"}], \"else_mode\": true}}'\ndata = json.loads(json_data)\ncondition = data['content']['condition']\nleft = condition['left']\nop = condition['op']\nright = condition['right']\nif ast.expr(ast.Num(int(right))) >= ast.expr(ast.Name(left, ast.Load())):\n    allowed = 'YES'\nelse:\n    allowed = 'NO'\nprint(allowed)\n```\nThis code loads the JSON data, extracts the condition, and evaluates it using Python's built-in `ast` module. If the condition is true, it sets the variable `allowed` to 'YES'; otherwise, it sets it to 'NO'. Finally, it prints the value of `allowed`."
+  },
+  {
+    "block": {
+      "anchor_id": "852c6f2e-995a-4021-8d00-b9b1d6397bd5",
+      "anchor_type": "if",
+      "content": {
+        "type": "if",
+        "condition": {
+          "left": "AGE",
+          "op": ">=",
+          "right": "18"
+        },
+        "then": [
+          {
+            "type": "assign",
+            "value": "'YES'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else": [
+          {
+            "type": "assign",
+            "value": "'NO'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else_mode": true
+      }
+    },
+    "analysis": "'''\ncondition = {'left': 'AGE', 'op': '>=', 'right': 18}\nif condition['left'] >= condition['right']:\n AllowED = 'YES'\n else:\n AllowED = 'NO'\n'''\n# This is the equivalent code with comments and using the 'if' statement in Python.\n# The original code is written in JSON format, so I have translated it into a Python dictionary for easier understanding.\n# The condition is checked to see if the age is greater than or equal to 18.\n# If it is, then the variable 'AllowED' is assigned the value 'YES'.\n# If it's not, then 'AllowED' is assigned the value 'NO'.\n# The 'else_mode' is not applicable in Python, so it is not included in the translation.\ncondition = {'left': 'AGE', 'op': '>=', 'right': 18}\nif condition['left'] >= condition['right']:\n AllowED = 'YES'\n else:\n AllowED = 'NO'\n# print(AllowED) # Uncomment this line to test the code."
+  },
+  {
+    "block": {
+      "anchor_id": "059ece0f-8b96-4d90-8284-8d7ac3ebcc03",
+      "anchor_type": "if",
+      "content": {
+        "type": "if",
+        "condition": {
+          "left": "AGE",
+          "op": ">=",
+          "right": "18"
+        },
+        "then": [
+          {
+            "type": "assign",
+            "value": "'YES'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else": [
+          {
+            "type": "assign",
+            "value": "'NO'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else_mode": true
+      }
+    },
+    "analysis": "print('ALLOWED') if {'anchor_id': '059ece0f-8b96-4d90-8284-8d7ac3ebcc03', 'anchor_type': 'if', 'content': {'type': 'if', 'condition': {'left': 'AGE', 'op': '>=', 'right': '18'}, 'then': [{'type': 'assign', 'value': \"'YES'\", 'target': 'ALLOWED'}], 'else': [{'type': 'assign', 'value': \"'NO'\", 'target': 'ALLOWED'}], 'else_mode': True}}['anchor_type'] == 'if' else None\nif {'anchor_id': '059ece0f-8b96-4d90-8284-8d7ac3ebcc03', 'anchor_type': 'if', 'content': {'type': 'if', 'condition': {'left': 'AGE', 'op': '>=', 'right': '18'}, 'then': [{'type': 'assign', 'value': \"'YES'\", 'target': 'ALLOWED'}], 'else': [{'type': 'assign', 'value': \"'NO'\", 'target': 'ALLOWED'}], 'else_mode': True}}['anchor_type'] == 'if' and {'anchor_id': '059ece0f-8b96-4d90-8284-8d7ac3ebcc03', 'anchor_type': 'if', 'content': {'type': 'if', 'condition': {'left': 'AGE"
+  },
+  {
+    "block": {
+      "anchor_id": "51aaaf2e-86a2-4813-a7ac-895e641a8630",
+      "anchor_type": "if",
+      "content": {
+        "type": "if",
+        "condition": {
+          "left": "AGE",
+          "op": ">=",
+          "right": "18"
+        },
+        "then": [
+          {
+            "type": "assign",
+            "value": "'YES'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else": [
+          {
+            "type": "assign",
+            "value": "'NO'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else_mode": true
+      }
+    },
+    "analysis": ":\ncondition_age = int(AGE)\nif condition_age >= 18:\n    ALLOWED = \"YES\"\nelse:\n    ALLOWED = \"NO\""
+  },
+  {
+    "block": {
+      "anchor_id": "55f0f596-4517-482d-a414-148d5060366f",
+      "anchor_type": "if",
+      "content": {
+        "type": "if",
+        "condition": {
+          "left": "AGE",
+          "op": ">=",
+          "right": "18"
+        },
+        "then": [
+          {
+            "type": "assign",
+            "value": "'YES'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else": [
+          {
+            "type": "assign",
+            "value": "'NO'",
+            "target": "ALLOWED"
+          }
+        ],
+        "else_mode": true
+      }
+    },
+    "analysis": "AGE = 20\n if AGE >= 18:\n ALLOWED = 'YES'\n else:\n ALLOWED = 'NO'"
+  }
+]
